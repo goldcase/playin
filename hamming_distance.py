@@ -3,6 +3,10 @@
 ########################
 
 ## Description: Calculates Hamming Distance
+## TODO: add Levenshtein edit distance (pref DP algo)
+
+# params: string x, string y
+# return: Hamming distance between string x and y
 
 def hamming_distance(x, y):
     diff_len = len(x) - len(y)     # take care of differences in string length
@@ -18,6 +22,7 @@ def hamming_distance(x, y):
 
     return hamming_dist
 
-print(hamming_distance("cat", "hat")) # expected: 1
-print(hamming_distance("holy shit", "holy fuck")) # expected: 4
-print(hamming_distance("gutenberg", "heisenberg")) # note that Levenshtein distance here would be a different story... tune in for next time
+print(hamming_distance("cat", "hat"))              # expected: 1
+print(hamming_distance("holy shit", "holy fuck"))  # expected: 4
+print(hamming_distance("gutenberg", "heisenberg")) # expected: 10
+                                                   # note that Levenshtein distance here would be a different story... tune in for next time
