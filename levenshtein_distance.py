@@ -5,6 +5,7 @@
 ## Description: Calculates Levenshtein distance between two strings.
 ## defined as : minimum number of single-character edits (ie: insertions, deletions, or substitutions)
 ##            : required to change one word into the other.
+## TODO: add explanation
 
 # Description: My first DP algorithm.
 # params: string a and string b to be compared to each other.
