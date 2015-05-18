@@ -14,9 +14,9 @@
 def levenshtein(a, b):
     len_a = len(a)
     len_b = len(b)
-    e = [[0 for j in range(len_b + 1)] for i in range(len_a + 1)]
+    e = [[0 for j in range(len_b + 1)] for i in range(len_a + 1)] # create DP Table
 
-    for j in range(len_b + 1):
+    for j in range(len_b + 1): # initialize 
         e[0][j] = j
 
     for i in range(1, len_a + 1):
